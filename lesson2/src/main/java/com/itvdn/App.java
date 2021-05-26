@@ -13,6 +13,7 @@ public class App {
     private static final Logger LOG = Logger.getLogger("myLogger");
 
     public static void main(String[] args) {
+        //Xml config case
         ApplicationContext ctx = new ClassPathXmlApplicationContext("context.xml");
 
         Person person1 = ctx.getBean("person1", Person.class);
