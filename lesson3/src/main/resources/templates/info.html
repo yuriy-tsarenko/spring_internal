@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div style="position: relative; margin: auto">
+    <img src="../images/ccd44c2e5f209b3a279efff0f4068bc2.png" style="width: 20%; height: 15%" alt="image">
+    <h3>• DispatcherServlet получает запрос и, опираясь на свои настройки, принимает
+        решение о том, какому контроллеру перенаправить запрос (Handler Mapping).
+        • После определения контроллера, запрос перенаправляется в него (Controller).
+        Там запрос обрабатывается, и в ответ отправляется модель и представление -
+        ModelAndView. Model - данные, view - логика их отображения.
+        • DispatcherServlet, на основе полученных данных, определяет какое
+        представление (view) нужно использовать(ViewResolver), и в ответе получает имя
+        данного представления.
+        • Представление получает данные (model), для отображения по определенной
+        логике, и посылает ответ DispatcherServlet, если есть такая необходимость.
+        • В представление передаются данные (model) и обратно, если необходимо,
+        посылается ответ от представления. </h3>
+    <a href="/">Home page</a>
+</div>
+
+</body>
+</html>
