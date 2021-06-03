@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI Module</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="css/images/siteIcon.png">
+</head>
+<body>
+<header>
+    <div class="header">home page</div>
+</header>
+<div class="pageWrapper">
+    <div class="page">
+        <div id="appForm">
+            <div class="label">Form</div>
+            <textarea placeholder="enter any words here..." v-model="words"></textarea>
+            <button v-on:click="submitWords">submit</button>
+        </div>
+        <div class="board">
+            <div v-if="flag" id="loader">
+                <div class="lds-hourglass"></div>
+            </div>
+            <div id="appWords">
+            </div>
+            <div id="appCount">
+               Unique: {{number}}
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer>
+</footer>
+<script src="js/index.js"></script>
+</body>
+</html>
